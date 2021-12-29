@@ -1,11 +1,9 @@
 import { Grid } from "@mui/material";
 import styled from "styled-components";
-import boy from "./assets/capas/boy.jpg";
-import garota from "./assets/capas/garota.jpg";
-
+import Capas from "./assets/capas.js"
 const BooksShowcase = () => {
     const Poster = styled.img`
-        width: 160px;
+        width: 100%;
         border-radius: 3px;
         box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 50%);
     `;
@@ -16,12 +14,13 @@ const BooksShowcase = () => {
             justifyContent="space-arround"
             spacing={3}
         >
-            <Grid item>
-                <Poster src={boy} alt="capa" />
-            </Grid>
-            <Grid item>
-                <Poster src={garota} alt="capa" />
-            </Grid>
+            {console.log(Capas)}
+            {Capas.length > 0 && Capas.map((item, index) =>
+                <Grid item key={index + 'book'} md={2}>
+                    <Poster src={item.url} alt="capa" />
+                </Grid>
+            )}
+
         </Grid>
     );
 }
