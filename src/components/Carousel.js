@@ -7,6 +7,7 @@ import image from "./assets/slide.png"
 const Carousel = () => {
     const settings = {
         dots: true,
+        arrows: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -17,10 +18,10 @@ const Carousel = () => {
         <div>
             <Slider {...settings}>
                 <div>
-                    <img src={image} alt="image" style={{width: "100%"}}/>
+                    <img src={image} alt="image" style={{ width: "100%" }} />
                 </div>
                 <div>
-                    <h3>2</h3>
+                    <img src={image} alt="image" style={{ width: "100%" }} />
                 </div>
                 <div>
                     <h3>2</h3>
