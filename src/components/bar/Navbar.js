@@ -8,14 +8,12 @@ import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import Logo from '../../components/assets/logo.png';
-import Sidebar from "./Sidebar.js";
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -158,25 +156,16 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-            <img src={Logo} alt="logo" style={{width: '150px'}}></img>
+            <img src={Logo} alt="logo" style={{width: '70px', padding: '.3rem'}} title="Livraria Gratis"></img>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
+              placeholder="Buscar…"
+              inputProps={{ 'aria-label': 'Buscar' }}
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
@@ -224,7 +213,6 @@ export default function Navbar() {
       
       {renderMobileMenu}
       {renderMenu}
-      <Sidebar />
     </Box>
   );
 }
