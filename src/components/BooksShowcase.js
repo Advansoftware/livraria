@@ -1,6 +1,8 @@
 import { Grid } from "@mui/material";
 import styled from "styled-components";
-import Capas from "./assets/capas.js"
+import Capas from "./assets/capas.js";
+import { Link } from "react-router-dom";
+
 const BooksShowcase = () => {
     const Poster = styled.img`
         width: 100%;
@@ -14,14 +16,18 @@ const BooksShowcase = () => {
             justifyContent="space-arround"
             spacing={3}
         >
-            {console.log(Capas)}
             {Capas.length > 0 && Capas.map((item, index) =>
-                <Grid item key={index + 'book'} md={2}>
-                    <Poster src={item.url} alt="capa" />
-                </Grid>
-            )}
 
-        </Grid>
+                <Grid item key={index + 'book'} md={2}>
+                    <Link to={'/' + item.name}>
+                        <Poster src={item.url} alt={item.name} title={item.name} />
+                    </Link>
+                </Grid>
+
+            )
+            }
+
+        </Grid >
     );
 }
 export default BooksShowcase;

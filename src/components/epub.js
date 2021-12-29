@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { ReactReader } from "react-reader"
+import Navbar from "./bar/Navbar"
 
 const Epub = () => {
   // And your own state logic to persist state
@@ -9,13 +10,17 @@ const Epub = () => {
     setLocation(epubcifi)
   }
   return (
-    <div style={{ height: "100vh" }}>
-      <ReactReader
-        location={location}
-        locationChanged={locationChanged}
-        url="https://gerhardsletten.github.io/react-reader/files/alice.epub"
-      />
-    </div>
+    <>
+
+      <Navbar />
+      <div style={{ height: "90vh", marginTop: '3rem' }}>
+        <ReactReader
+          location={location}
+          locationChanged={locationChanged}
+          url="https://gerhardsletten.github.io/react-reader/files/alice.epub"
+        />
+      </div>
+    </>
   )
 }
 

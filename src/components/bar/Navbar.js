@@ -14,6 +14,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import Logo from '../../components/assets/logo.png';
+import { Link } from 'react-router-dom';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -158,7 +159,7 @@ export default function Navbar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
         <Toolbar>
-            <img src={Logo} alt="logo" style={{width: '70px', padding: '.3rem'}} title="Livraria Gratis"></img>
+        <Link to="/"><img src={Logo} alt="logo" style={{width: '70px', padding: '.3rem'}} title="Livraria Gratis"></img></Link>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
