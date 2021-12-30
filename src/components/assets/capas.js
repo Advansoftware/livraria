@@ -1,35 +1,35 @@
 const Capas = [
     {
         name: "boy",
-        url: "http://localhost:3000/assets/capas/boy.jpg",
+        url: "https://firebasestorage.googleapis.com/v0/b/react-ebd8c.appspot.com/o/boy.jpg?alt=media&token=02852c63-77c9-4756-8746-d75718fad88d",
     },
     {
         name: "garota",
-        url: "http://localhost:3000/assets/capas/garota.jpg",
+        url: "%PUBLIC_URL%/assets/capas/garota.jpg",
     },
     {
         name: "hentai",
-        url: "http://localhost:3000/assets/capas/hentai.jpg",
+        url: "%PUBLIC_URL%/assets/capas/hentai.jpg",
     },
     {
         name: "invencible",
-        url: "http://localhost:3000/assets/capas/invencible.jpg",
+        url: "%PUBLIC_URL%/assets/capas/invencible.jpg",
     },
     {
         name: "boy",
-        url: "http://localhost:3000/assets/capas/boy.jpg",
+        url: "%PUBLIC_URL%/assets/capas/boy.jpg",
     },
     {
         name: "garota",
-        url: "http://localhost:3000/assets/capas/garota.jpg",
+        url: "%PUBLIC_URL%/assets/capas/garota.jpg",
     },
     {
         name: "hentai",
-        url: "http://localhost:3000/assets/capas/hentai.jpg",
+        url: "%PUBLIC_URL%/assets/capas/hentai.jpg",
     },
     {
         name: "invencible",
-        url: "http://localhost:3000/assets/capas/invencible.jpg",
+        url: "%PUBLIC_URL%/assets/capas/invencible.jpg",
     }
 ]
 export default Capas;
