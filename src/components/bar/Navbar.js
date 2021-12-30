@@ -13,7 +13,6 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import Logo from '../../components/assets/logo.png';
 import { Link } from 'react-router-dom';
 
 
@@ -159,7 +158,7 @@ export default function Navbar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
         <Toolbar>
-        <Link to="/"><img src={Logo} alt="logo" style={{width: '70px', padding: '.3rem'}} title="Livraria Gratis"></img></Link>
+        <Link to="/"><img src="https://firebasestorage.googleapis.com/v0/b/react-ebd8c.appspot.com/o/logo.png?alt=media&token=b1d7e989-0b4f-4f1b-921c-2509228905e0"alt="logo" style={{width: '70px', padding: '.3rem'}} title="Livraria Gratis"></img></Link>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
