@@ -25,7 +25,7 @@ const EpubReader = () => {
       <Navbar />
       <div style={{ height: "90vh", marginTop: '3rem' }}>
         <ReactReader
-          url="http://localhost:3000/Invencrivel.epub"
+          url="https://firebasestorage.googleapis.com/v0/b/react-ebd8c.appspot.com/o/Invencrivel.epub?alt=media&token=f307e9f4-2503-4ac7-80b5-bcf3f6766cbe"
           getRendition={(rendition) => {
             renditionRef.current = rendition
             renditionRef.current.themes.fontSize(`${size}%`)
