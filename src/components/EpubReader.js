@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { ReactReader } from "react-reader"
 import Navbar from "./bar/Navbar"
 
-const Epub = () => {
+const EpubReader = () => {
   // And your own state logic to persist state
   const [location, setLocation] = useState(null)
   const locationChanged = (epubcifi) => {
@@ -41,4 +41,4 @@ const Epub = () => {
   )
 }
 
-export default Epub
+export default EpubReader;
