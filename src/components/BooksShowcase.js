@@ -18,7 +18,7 @@ const BooksShowcase = () => {
         >
             {Capas.length > 0 && Capas.map((item, index) =>
 
-                <Grid item key={index + 'book'} md={2}>
+                <Grid item key={index + 'book'} md={2} xs={6}>
                     <Link to={'/' + item.name}>
                         <Poster src={item.url} alt={item.name} title={item.name} />
                     </Link>
